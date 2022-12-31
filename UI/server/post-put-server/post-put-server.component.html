@@ -1,0 +1,17 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">ID del Server </label>
+    <div class="col-sm-10">
+        <!-- ngModel fa data binding automaticamente, quindi il valore dell'input automaticamente viene assegnato -->
+        <input type="text" class="form-control" [(ngModel)]="IdServer" placeholder="Inserisci l'ID che identifica il server"/>
+    </div>
+    <label class="col-sm-2 col-form-label">Stato del Server</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="StatusServer" placeholder="Inserisci lo stato del server, 'true' oppure 'false', altri valori non verranno accettati" />
+    </div>
+</div>
+<button (click)="aggiungiServer()" *ngIf="ser.IdServer == 0" class="btn btn-primary">
+  Aggiungi
+</button>
+<button (click)="aggiornaServer()" *ngIf="ser.IdServer != 0" class="btn btn-primary">
+  Aggiorna
+</button>

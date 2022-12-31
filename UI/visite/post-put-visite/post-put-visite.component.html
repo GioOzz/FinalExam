@@ -1,0 +1,25 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">ID delle Visite </label>
+    <div class="col-sm-10">
+        <!-- ngModel fa data binding automaticamente, quindi il valore dell'input automaticamente viene assegnato -->
+        <input type="text" class="form-control" [(ngModel)]="IdVisite" placeholder="Inserisci l'ID che identifica le visite"/>
+    </div>
+    <label class="col-sm-2 col-form-label">Data Resoconto</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="DataAccesso" placeholder="Inserisci la data in cui sono stati visualizzati i dati delle visite" />
+    </div>
+    <label class="col-sm-2 col-form-label">Numero di Visite</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="NumVisite" placeholder="Inserisci il totale di visite riscontrate in concomitanza alla data" />
+    </div>
+    <label class="col-sm-2 col-form-label">Guadagni generati dal traffico</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="GuadagniPagina" placeholder="Inserisci il guadagno (numero INTERO) di effettivo guadagno di traffico" />
+    </div>
+</div>
+<button (click)="aggiungiVisite()" *ngIf="vis.IdVisite == 0" class="btn btn-primary">
+  Aggiungi
+</button>
+<button (click)="aggiornaVisite()" *ngIf="vis.IdVisite != 0" class="btn btn-primary">
+  Aggiorna
+</button>

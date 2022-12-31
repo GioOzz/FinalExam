@@ -1,0 +1,21 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Numero del profitto</label>
+    <div class="col-sm-10">
+        <!-- ngModel fa data binding automaticamente, quindi il valore dell'input automaticamente viene assegnato -->
+        <input type="text" class="form-control" [(ngModel)]="IdProfitto" placeholder="Inserisci l'ID che indica il profitto" />
+    </div>
+    <label class="col-sm-2 col-form-label">Periodo Profitto</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="PeriodoProfitto" placeholder="Inserisci il mese del profitto" />
+    </div>
+    <label class="col-sm-2 col-form-label">Profitto Aziendale</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Profitto" placeholder="Inserisci l'ammontare del profitto dell'azienda" />
+    </div>
+</div>
+<button (click)="aggiungiProfitto()" *ngIf="pro.IdProfitto == 0" class="btn btn-primary">
+  Aggiungi
+</button>
+<button (click)="aggiornaProfitto()" *ngIf="pro.IdProfitto != 0" class="btn btn-primary">
+  Aggiorna
+</button>
