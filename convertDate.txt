@@ -1,2 +1,0 @@
-convert(varchar(10),UltimoAccesso,120) as UltimoAccesso
-string query = @"INSERT INTO dbo.Clienti (Email,NomeUtente,CognomeUtente, UltimoAccesso) VALUES ('" + cli.Email + @"','" + cli.NomeUtente + @"', '" + cli.CognomeUtente + @"',convert(datetime,'" + cli.UltimoAccesso.ToString("yyyyMMdd") + @"',2) )";
