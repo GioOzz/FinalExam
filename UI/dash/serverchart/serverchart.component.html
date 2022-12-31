@@ -1,0 +1,6 @@
+<h1>Grafico riferito all tempo di attività del sito (in ore)</h1>
+<h4>In questo caso (4.808 ore = circa 200 giorni )</h4>
+<ngx-charts-gauge [view]="view" [scheme]="colorScheme" [results]="DatiServer" [legend]="legend"
+    [legendPosition]="legendPosition" (select)="onSelect($event)" (activate)="onActivate($event)"
+    (deactivate)="onDeactivate($event)" [legendTitle]="legendTitle">
+</ngx-charts-gauge>

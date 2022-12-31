@@ -1,0 +1,22 @@
+:host {
+  display: flexbox;
+  /*flex-direction: column;*/
+}
+
+mat-drawer {
+  width: 300px;
+}
+mat-drawer-container {
+  height: 90%;
+}
+mat-drawer-content {
+  padding: 150px;
+}
+
+.login-main {
+  margin-top: 10%;
+}
+mat-card {
+  margin-top: 10%;
+  min-width: 40%;
+}

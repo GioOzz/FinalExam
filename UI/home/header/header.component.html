@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="MovSidebar()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <img id="logo"
+            src="https://getconnected.honeywellhome.com/en/sites/getconnected.honeywell.com.en/files/lyric_to_home.png"
+            alt="Logo" />
+        <span> Dashboard Aziendale </span>
+
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" style="margin-top: 17px;">
+            <ul fxLayout="row" fxLayoutGap="30px">
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>settings
+                        </mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>help_outline</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu" (click)="esci()">
+                        <mat-icon >person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item routerLink="/login">
+                            <mat-icon >exit_to_app</mat-icon>
+                            Esci dall'app
+                        </button>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

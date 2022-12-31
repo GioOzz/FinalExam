@@ -1,0 +1,13 @@
+.nav-item {
+  text-align: right float right !important;
+  padding-right: 15px;
+}
+.navbar-nav > li {
+  display: inline-table;
+}
+.navbar-nav > li.navbar-right {
+  float: right !important;
+}
+.footerspan{
+    padding-left: 18%; 
+}

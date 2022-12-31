@@ -1,0 +1,8 @@
+<h1> Grafico controllo Costi</h1>
+<h3> Questo grafico raffigura la frequenza degli utenti delle 3 tipologie di attività </h3>
+<div style="padding: 50px;"></div>
+<ngx-charts-heat-map [results]="DatiClienti" [view]="view" [scheme]="colorScheme" [legend]="legend"
+    [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+    [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" (select)="onSelect($event)" (activate)="onActivate($event)"
+    (deactivate)="onDeactivate($event)" [legendTitle]="legendTitle">
+</ngx-charts-heat-map>

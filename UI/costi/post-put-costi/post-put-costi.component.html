@@ -1,0 +1,21 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Numero della spesa</label>
+    <div class="col-sm-10">
+        <!-- ngModel fa data binding automaticamente, quindi il valore dell'input automaticamente viene assegnato -->
+        <input type="text" class="form-control" [(ngModel)]="IdSpesa" placeholder="Inserisci l'ID della spesa" />
+    </div>
+    <label class="col-sm-2 col-form-label">Tipologia spesa</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Tipo" placeholder="Inserisci la tipologia di spesa" />
+    </div>
+    <label class="col-sm-2 col-form-label">Importo spesa</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Importo" placeholder="Inserisci l'importo della spesa (Senza Virgole)" />
+    </div>
+</div>
+<button (click)="aggiungiCosto()" *ngIf="cos.IdSpesa == 0" class="btn btn-primary">
+  Aggiungi
+</button>
+<button (click)="aggiornaCosto()" *ngIf="cos.IdSpesa != 0" class="btn btn-primary">
+  Aggiorna
+</button>

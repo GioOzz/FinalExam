@@ -1,0 +1,13 @@
+ul,
+li {
+    list-style: none;
+}
+
+#logo {
+    inline-size: 40px;
+    margin: 15px;
+}
+
+#btnchiudi {
+    color: blue;
+}

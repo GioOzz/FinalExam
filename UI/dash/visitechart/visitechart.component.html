@@ -1,0 +1,18 @@
+<table>
+    <h1>Grafico riferito ai visitatori del sito nei 12 mesi dell'Anno</h1>
+    <tr>
+        <td>
+            <ngx-charts-pie-chart [results]="DatiVisite" [view]="view" [scheme]="colorScheme" [gradient]="gradient"
+                [legend]="showLegend" [legendPosition]="legendPosition" [labels]="showLabels" [doughnut]="isDoughnut"
+                (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)" [legendTitle]="legendTitle">
+            </ngx-charts-pie-chart>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <ngx-charts-pie-grid [results]="DatiVisite" [view]="view" [scheme]="colorScheme"
+                (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+            </ngx-charts-pie-grid>
+        </td>
+    </tr>
+</table>

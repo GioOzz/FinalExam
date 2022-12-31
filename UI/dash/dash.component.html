@@ -1,0 +1,96 @@
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<h1 class="titolo">Questa schermata è il "Core" principale. <br> Qui sotto puoi esplorare i grafici di monitoraggio
+</h1>
+<h3 class="titolo"> Ogni grafico presente si può approfondire</h3>
+<table>
+  <tr>
+    <td>
+      <div class="noselect" >
+        <md-card>
+          <h2>Grafico Clienti</h2>
+          <img class="clichart" src="https://www.augustasrisk.com/wp-content/uploads/2020/09/grafico-3.jpg">
+        </md-card>
+      </div>
+      <div class="btn">
+        <button class="btntransparente" (click)="heatchart()">
+          <span class="noselect">Mostra</span>
+        </button>
+      </div>
+    </td>
+
+    <td>
+      <div class="noselect div-costi" >
+        <md-card>
+          <h2>Grafico Costi</h2>
+          <img class="coschart" src="https://docs.siren.io/10.1.2/platform/en/image/15c3f2e507b384.png">
+        </md-card>
+      </div>
+      <div class="btn">
+        <button class="btntransparente" (click)="graficobarhor()">
+          <span class="noselect">Mostra</span>
+        </button>
+      </div>
+    </td>
+    <td>
+      <div class="noselect">
+        <md-card>
+          <h2>Grafico Ordini</h2>
+          <img class="ordinichart"
+            src="https://cdn.educba.com/academy/wp-content/uploads/2018/12/Stacked-Area-Chart-Example-1-9.png">
+        </md-card>
+      </div>
+      <div class="btn">
+        <button class="btntransparente" (click)="graficonumarea()">
+          <span class="noselect">Mostra</span>
+        </button>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <div class="div-spazio"></div>
+  </tr>
+  <tr>
+    <td>
+      <div class="noselect">
+        <md-card>
+          <h2>Grafico Profitti</h2>
+          <img class="linechart"
+            src="https://www.patternfly.org/v3/pattern-library/data-visualization/line-chart/img/line-chart.png">
+        </md-card>
+      </div>
+      <div class="btn">
+        <button class="btntransparente" (click)="graficoline()">
+          <span class="noselect">Mostra</span>
+        </button>
+      </div>
+    </td>
+    <td>
+      <div class="noselect">
+        <md-card>
+          <h2>Grafico Server</h2>
+          <img class="servchart"
+            src="https://cdnspeed-exceldashboardsc.netdna-ssl.com/wp-content/uploads/2021/03/gauge-chart-tutorial-and-templates.png">
+        </md-card>
+      </div>
+      <div class="btn">
+        <button class="btntransparente" (click)="graficogauge()">
+          <span class="noselect">Mostra</span>
+        </button>
+      </div>
+    </td>
+    <td>
+      <div class="noselect">
+        <md-card>
+          <h2>Grafico Visite</h2>
+          <img class="vischart" src="https://pnp.github.io/sp-dev-fx-controls-react/assets/DoughnutChart.png">
+        </md-card>
+      </div>
+      <div class="btn">
+        <button class="btntransparente" (click)="graficopie()">
+          <span class="noselect">Mostra</span>
+        </button>
+      </div>
+    </td>
+  </tr>
+
+</table>
