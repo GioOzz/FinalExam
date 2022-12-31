@@ -1,0 +1,1 @@
+This part is the UI part, implemented with Angular (HTML/CSS/TS)
